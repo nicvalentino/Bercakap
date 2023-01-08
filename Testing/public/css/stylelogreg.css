@@ -1,0 +1,110 @@
+body{
+    height: 100vh;
+    background: rgb(112,116,232) !important;
+    background: linear-gradient(180deg, rgba(112,116,232,1) 22%, rgba(248,247,247,1) 100%) !important;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #332;
+}
+
+/**
+.btn { 
+    background: #7074E8;
+    backdrop-filter: blur(14.3571px);
+    
+    border-radius: 17px;
+} **/
+
+.card{
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 0.5rem 1rem 0 rgba (0, 0, 0, 0.1);
+}
+
+.img-left{
+    width: 45%;
+    background: url('../images/LogRegBanner.png') center;
+    background-size: cover;
+}
+
+.card-body{
+    padding: 2rem;
+}
+
+.title{
+    margin-bottom: 2rem;
+}
+
+.form-input{
+    position: relative;
+}
+
+.form-input input{
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #DCD7D7;
+    border-radius: 17px;
+    outline: none;
+    background: #F8F7F7;
+}
+
+.form-input-reg input{
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #DCD7D7;
+    border-radius: 17px;
+    outline: none;
+    background: #F8F7F7;
+}
+
+/**
+.form-input span{
+    position: absolute;
+    top: 10px;
+    padding-left: 15px;
+}**/
+
+.form-input input:focus, .form-input input:valid{
+    border: 2px solid #7074E8;
+}
+
+.form-input input:focus::placeholder{
+    color: #454b69;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #7074E8 !important;
+    border: 0px;
+}
+
+.form-box button[type="submit"]{
+    height: 40px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 17px;
+    background: #7074E8;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.form-box button[type="submit"]:hover{
+    background-color: #5458c5;
+}
