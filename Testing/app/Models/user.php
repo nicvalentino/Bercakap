@@ -2,11 +2,13 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use App\Models\likepost;
+use App\Models\dislikepost;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class user extends Authenticatable
 {
@@ -19,20 +21,19 @@ class user extends Authenticatable
         return $this->hasMany(pertanyaan::class);
     }
 
-    public function donations()
-    {
-        return $this->hasMany(donation::class);
-    }
-
     public function comments()
     {
         return $this->hasMany(comment::class);
     }
 
-    public function likes()
+    public function likeposts()
     {
-        return $this->hasMany(like::class);
+        return $this->hasMany(likepost::class);
     }
 
+    public function dislikeposts()
+    {
+        return $this->hasMany(dislikepost::class);
+    }
     
 }

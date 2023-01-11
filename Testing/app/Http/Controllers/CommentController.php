@@ -39,7 +39,7 @@ class CommentController extends Controller
         if (Auth::check()){
             $validatedData = $request->validate([
                 'user_id' =>'required',
-                'pertanyaan_id' => 'required',
+                'post_id' => 'required',
                 'body' => 'required'
             ]);
     
@@ -70,7 +70,15 @@ class CommentController extends Controller
      */
     public function edit(comment $comment)
     {
-        //
+        if(Auth::check()){
+            return view( 'EditKomentar', [
+                'isLoggedIn' => Auth::check(),
+                'user' => Auth::user(),
+                'comment' => $comment,
+            ]);
+        } else {
+            return redirect('/login');
+        }
     }
 
     /**
@@ -87,7 +95,7 @@ class CommentController extends Controller
         ]);
 
         comment::where('id', $comment->id)->update($validatedData);
-        return redirect('/forum');
+        return redirect('/post/'.$comment->post_id);
     }
 
     /**

@@ -21,23 +21,20 @@
     @endif
     
     <!-- Logo -->
-    <div style="text-align: center;">
-        <img src="images/LogoWhite.png" style="width: 60%; margin-bottom: 20px;" alt="">
-    </div>
-    <!-- Logo -->
 
     
 
     <div class="container">
         <div class="row px-3">
-            <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
-                <!-- Banner -->
-                <div class="img-left d-none d-md-flex"></div>
+            <div class="col-lg-10 col-xl-7 card flex-row mx-auto px-0">
                 <!-- Banner -->
 
                 <!-- Form -->
                 <div class="card-body">
-                    <h4 class="title text-center mb-2" style="">
+                    <div style="text-align: center;">
+                        <img src="images/Logo-Bercakap-Hitam.png" style="width:50%;margin-left:20px;padding-bottom:20px;" alt="">
+                    </div>
+                    <h4 class="title text-center mb-2">
                         Daftar
                     </h4>
                     <form class="form-box px-3" method = "POST" action = "/register">
@@ -87,29 +84,25 @@
                             @enderror
                         </div>
 
-                        <div class="mb-3" style="">
+                        <div class="mb-3">
                             <button type="submit" class="btn btn-block">
                                 <div class="text-light">
                                     Daftar
                                 </div>
                             </button>
                         </div>
-
-                        <div class="text-center mb-2">
+                        <div class="sebelahan">
+                            <div class="border" style="width: 14%;"></div>
+                            <span>&nbsp;&nbsp;Atau&nbsp;&nbsp;</span>
+                            <div class="border" style="width: 14%;"></div>
+                        </div>
+                        <div class="text-center mb-2" style="padding-top:10px;">
                             Sudah punya akun?
-                            <a href="/login" class="register-link">
-                                <u>Masuk</u>
-                            </a>
+                            <a href="/login" class="register-link">Masuk</a>
                         </div>
                     </form>
                 </div>
                 <!-- Form -->
-            </div>
-            <div class="container mt-4" style="text-align: center;">
-                I accept Psychore's Terms of Use and Privacy Notice. 
-            </div>
-            <div class="container " style="text-align: center;">
-                This site is protected by reCAPTCHA Enterprise and the Google Privacy Policy and Terms of Service apply.
             </div>
         </div>
     </div>

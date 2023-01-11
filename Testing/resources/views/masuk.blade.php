@@ -29,25 +29,19 @@
 
 
     <!-- Logo -->
-    <div style="text-align: center;">
-        <img src="images/LogoWhite.png" style="width: 60%; margin-bottom: 20px;" alt="">
-    </div>
-    <!-- Logo -->
-
     <div class="container">
         <div class="row px-3">
-            <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
-                <!-- Banner -->
-                <div class="img-left d-none d-md-flex"></div>
-                <!-- Banner -->
-
+            <div class="col-lg-10 col-xl-7 card flex-row mx-auto px-0">
                 <!-- Form -->
                 <div class="card-body">
+                    <div style="text-align: center;">
+                        <img src="images/Logo-Bercakap-Hitam.png" style="width:50%;margin-left:10px;" alt="">
+                    </div>
                     <h4 class="title text-center mt-4">
-                        Masuk
                     </h4>
                     <form class="form-box px-3" method="POST" action="/login">
                         @csrf
+                        <h4 style="text-align: center;">Masuk</h4>
                         Email
                         <div class="form-input">
                             <span><i class="fa fa-envelope-o"></i></span>
@@ -79,12 +73,14 @@
                                 </div>
                             </button>
                         </div>
-
-                        <div class="text-center mb-2">
+                        <div class="sebelahan">
+                            <div class="border" style="width: 19%;"></div>
+                            <span>&nbsp;&nbsp;Atau&nbsp;&nbsp;</span>
+                            <div class="border" style="width: 19%;"></div>
+                        </div>
+                        <div class="text-center mb-2" style="padding-top:10px;">
                             Belum punya akun?
-                            <a href="/register" class="register-link">
-                                <u>Daftar di sini</u>
-                            </a>
+                            <a href="/register">Daftar di sini</a>
                         </div>
                     </form>
                 </div>

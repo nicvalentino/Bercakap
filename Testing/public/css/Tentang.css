@@ -1,0 +1,407 @@
+* {
+  font-family: 'Montserrat';
+  line-height: 20px;
+  font-size: 15px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dedede;
+  scroll-behavior: smooth;
+}
+.button{
+  background-color: #333;
+  margin-top: 30px;
+}
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #343a40;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: #01a6ff;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.95);
+}
+.popup{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.popupcontent{
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.25);
+  
+  opacity: 0;
+
+  transition: all 0.5s 0.1s;
+}
+.popupimg{
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.popupheader{
+  text-align: center;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 36px;
+}
+.popuptext{
+  padding: 0 36px;
+  line-height: 1.4;
+}
+.popupimg .pojokkiri img{
+  border-radius: 20px 0px 0px 0px;
+}
+.popupimg .pojokkanan img{
+  display: block;
+  border-radius: 0px 20px 0px 0px;
+}
+.popupimg img{
+  display: block;
+  width: 33.3333%;
+}
+.popuptext p:not(:last-child){
+  margin-bottom: 16px;
+}
+#popup:target{
+  opacity: 1;
+  visibility: visible;
+}
+#popup:target .popupcontent{
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popupclose:link,
+.popupclose:visited{
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  line-height: 1;
+  transition: all .3s;
+}
+.popupclose:hover,
+.popupclose:active{
+  color: #555;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.layar-dalam{
+  width: 1000px;
+  margin: auto;
+}
+.layar-penuh {
+  width: 100%;
+}
+nav{
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+nav.putih{
+  background-color: #fff;
+}
+nav .logo{
+  /*Penempatan classnya blm ukuran logony*/
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+/*Ukuran logony*/
+nav .logo img {
+  vertical-align: middle;
+  width: 50px;
+}
+/*Posisi menu header*/
+nav .menu{
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+/*Posisi menunya biar letaknya sebelahan*/
+nav .menu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav .menu ul li{
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+/*Jarak masing-masing menu header*/
+nav ul li a{
+  color: rgb(0, 0, 0);/*warna menu header*/
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;/*Biar gada garis dibawah header menunya*/
+}
+/*Biar pas ngarahin cursor ke menu ada garis bawahnya*/
+nav ul li a:hover{
+  text-decoration: underline;
+}
+/*Pengaturan header*/
+header{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+#navbar {
+  /*Jadiin menu header samping-sapingan, tapi jaraknya masih dempet banget*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  /*Benerin jarak masing-masing menu header*/
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  /*Ngilangin garis di masing-masing bawah header menu + atur ukuran sama warna font*/
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  /*Transisi kalo warna kalo nunjukin cursor ke arah menu header*/
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  /*Ngasih efek berubah warna kalo menunya diarahin cursor sama stay terus warnanya kalo lagi ada di menu itu*/
+  color: #01a6ff;
+}
+
+header .intro{
+  z-index: 100;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+header .intro h3{
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.tombol {
+  background-color: aqua;
+  height: 40px;
+  line-height: 42px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+/*Gak kepake di gw*/
+header .overlay{
+  position: absolute;
+  top: 55px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0%;
+}
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+/*Sandwich*/
+.tombol-menu .garis{
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+}
+section {
+  padding: 85px 0px 50px 0px;
+}
+section h3 {
+  font-size: 30px;
+  letter-spacing: 0.22em;
+  padding: 0px 0px 0px 0px;
+}
+section p.ringkasan {
+  font-size: 18px;
+  padding: 0px 0px 30px 0px;
+}
+section h4 {
+  font-size: 30px;
+}
+section .konten-isi p{
+  font-style: normal;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav.putih .tombol-menu .garis{
+  background-color: #01a6ff;
+}
+nav.putih ul li a{
+  color: #333;
+}
+nav .logo img.hitam{
+  display: none;
+}
+#page-header{
+  background-image: url("asset/Banner.png");
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  flex-direction: column;
+  padding: 14px;
+}
+#about-head{
+  display: flex;
+  align-items: center;
+}
+#about-head div{
+  padding-left: 40px;
+}
+#about-head img{
+  width: 50%;
+  height: auto;
+}
+footer{
+  padding: 50px 0px 50px 0px;
+  background-color: #6FC7E9;
+  color: #FFF;
+  }
+  footer .layar-dalam {
+  /*Untuk jadiin gk turun ke bawah tpi jadiin row*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  footer .layar-dalam div {
+  width: 20%;
+  }
+  footer .layar-dalam h5 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  }
+  footer .layar-dalam .copyright {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #666;
+  text-align: center;
+  }
+  #contact h5{
+  font-size: 20px;
+  margin: 0px 0px 15px 5px;
+
+  }
+  .footertentang h4{
+  padding: 0px 0px 15px 5px;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  }
+  .footerpembayaran{
+  padding: 0px 150px 0px 0px;
+  }
+  .footerproduk h4{
+  padding: 0px 0px 15px 5px;
+  color: #fff;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0;
+  }
+  .footerproduk a{
+  text-decoration: none;
+  }
+  footer h4:hover{
+  /*Ngasih efek berubah warna kalo menunya diarahin cursor*/
+  color: #01a6ff;
+  transition: 0.3s;
+  }
+  .footertentang a{
+  text-decoration: none;
+  }
+@media screen and (max-width:991.98px) {
+  .layar-dalam {
+      width: 90%;
+  }
+  #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+  }
+  nav .menu ul{
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+  }
+  nav .menu ul li{
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      line-height: 40px;
+  }
+  nav .menu ul li a{
+      color: #333;
+  }
+  .tombol-menu{
+      display: flex;
+  }
+}

@@ -1,7 +1,8 @@
 body{
     height: 100vh;
-    background: rgb(112,116,232) !important;
-    background: linear-gradient(180deg, rgba(112,116,232,1) 22%, rgba(248,247,247,1) 100%) !important;
+    background-image: url("../images/Background-Login.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -15,25 +16,45 @@ body{
     color: #332;
 }
 
-/**
-.btn { 
-    background: #7074E8;
-    backdrop-filter: blur(14.3571px);
-    
-    border-radius: 17px;
-} **/
+.sebelahan{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #343a40;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    text-decoration: none;
+    background-color: #4E9BB9;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.95);
+  }
+
+  .border{
+    border-radius: 50px;
+    height: 4px;
+    background: #01a6ff;
+    margin: 13px 0px 0px 0%;
+}
 
 .card{
     overflow: hidden;
     border: 0 !important;
     border-radius: 20px !important;
     box-shadow: 0 0.5rem 1rem 0 rgba (0, 0, 0, 0.1);
-}
-
-.img-left{
-    width: 45%;
-    background: url('../images/LogRegBanner.png') center;
-    background-size: cover;
 }
 
 .card-body{
@@ -74,15 +95,8 @@ body{
     background: #F8F7F7;
 }
 
-/**
-.form-input span{
-    position: absolute;
-    top: 10px;
-    padding-left: 15px;
-}**/
-
 .form-input input:focus, .form-input input:valid{
-    border: 2px solid #7074E8;
+    border: 2px solid #6FC7E9;
 }
 
 .form-input input:focus::placeholder{
@@ -90,7 +104,7 @@ body{
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
-    background-color: #7074E8 !important;
+    background-color: #6FC7E9 !important;
     border: 0px;
 }
 
@@ -100,11 +114,11 @@ body{
     border: none;
     cursor: pointer;
     border-radius: 17px;
-    background: #7074E8;
+    background: #6FC7E9;
     color: #FFFFFF;
     transition: 0.5s;
 }
 
 .form-box button[type="submit"]:hover{
-    background-color: #5458c5;
+    background-color: #4E9BB9
 }

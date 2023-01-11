@@ -23,11 +23,6 @@ class pertanyaan extends Model
         return $this->belongsTo(user::class);
     }
 
-    public function jawaban_psikiaters()
-    {
-        return $this->hasMany(jawaban_psikiater::class);
-    }
-
     public function comments()
     {
         return $this->hasMany(comment::class);

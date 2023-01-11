@@ -1,0 +1,461 @@
+* {
+  font-family: 'Montserrat';
+  line-height: 20px;
+  font-size: 15px;
+  }
+  .layar-dalam{
+   width: 1000px;
+  margin: auto;
+  }
+  .layar-penuh {
+  width: 100%;
+  }
+  html{
+  margin: 0;
+  padding: 0;
+  background-color: #dedede;
+  scroll-behavior: smooth;
+  }
+  nav{
+  z-index: 0;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  }
+  nav.putih{
+      background-color: #fff;
+  }
+  nav .logo{
+      /*Penempatan classnya blm ukuran logony*/
+      float: left;
+      position: relative;
+      line-height: 55px;
+      text-align: center;
+  }
+  /*Ukuran logony*/
+  nav .logo img {
+      vertical-align: middle;
+      width: 50px;
+  }
+  /*Posisi menu header*/
+  nav .menu{
+      float: right;
+      height: 60px;
+      max-width: 700px;
+  }
+  /*Posisi menunya biar letaknya sebelahan*/
+  nav .menu ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+  nav .menu ul li{
+      list-style-type: none;
+      float: left;
+      line-height: 60px;
+  }
+  /*Jarak masing-masing menu header*/
+  nav ul li a{
+      color: rgb(0, 0, 0);/*warna menu header*/
+      text-align: center;
+      padding: 0px 16px 0px 16px;
+      text-decoration: none;/*Biar gada garis dibawah header menunya*/
+  }
+  /*Biar pas ngarahin cursor ke menu ada garis bawahnya*/
+  nav ul li a:hover{
+      text-decoration: underline;
+  }
+  /*Pengaturan header*/
+  header{
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      z-index: 2;
+  }
+  #navbar {
+      /*Jadiin menu header samping-sapingan, tapi jaraknya masih dempet banget*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #navbar li {
+      /*Benerin jarak masing-masing menu header*/
+      list-style: none;
+      padding: 0 20px;
+      position: relative;
+  }
+
+  #navbar li a {
+      /*Ngilangin garis di masing-masing bawah header menu + atur ukuran sama warna font*/
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: #343a40;;  /*Warna masing-masing menu*/
+      /*Transisi kalo warna kalo nunjukin cursor ke arah menu header*/
+      transition: 0.3s ease;
+  }
+
+  #navbar li a:hover,
+  #navbar li a.active {
+      /*Ngasih efek berubah warna kalo menunya diarahin cursor sama stay terus warnanya kalo lagi ada di menu itu*/
+      color: #01a6ff;
+  }
+  nav.putih {
+  background-color: #dedede;
+  }
+  nav.putih .tombol-menu .garis{
+      background-color: #01a6ff;
+  }
+  nav.putih ul li a{
+      color: #333;
+  }
+  nav .logo img.hitam{
+      display: none;
+  }
+  .tombol-menu {
+      position: absolute;
+      top: 1.7rem;
+      right: 1rem;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+  }
+h5{
+  font-weight: 550;
+  display: flex;
+  font-size: 15px;
+  }
+  /*Sandwich*/
+  .tombol-menu .garis{
+      height: 3px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+  }
+  form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  }
+
+  label {
+  display: block;
+  margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  textarea,
+  input[type="number"],
+  input[type="file"],
+  input[type="password"],
+  input[type="email"],
+  input[type="submit"],
+  button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  }
+
+  input[type="submit"] {
+  background-color: #343a40;
+  color: white;
+  cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+  background-color: #01a6ff;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.95);
+  }
+
+  footer{
+  padding: 50px 0px 50px 0px;
+  background-color: #6FC7E9;
+  color: #FFF;
+  }
+  footer .layar-dalam {
+  /*Untuk jadiin gk turun ke bawah tpi jadiin row*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  footer .layar-dalam div {
+  width: 20%;
+  }
+  footer .layar-dalam h5 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  }
+  footer .layar-dalam .copyright {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #666;
+  text-align: center;
+  }
+  #contact h5{
+  font-size: 20px;
+  margin: 0px 0px 15px 5px;
+
+  }
+  .footertentang h4{
+  padding: 0px 0px 15px 5px;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  }
+  .footerpembayaran{
+  padding: 0px 150px 0px 0px;
+  }
+  .footerproduk h4{
+  padding: 0px 0px 15px 5px;
+  color: #fff;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0;
+  }
+  .footerproduk a{
+  text-decoration: none;
+  }
+  footer h4:hover{
+  /*Ngasih efek berubah warna kalo menunya diarahin cursor*/
+  color: #01a6ff;
+  transition: 0.3s;
+  }
+  .footertentang a{
+  text-decoration: none;
+  }
+  .pembayaranluar{
+  padding: 0px 0px 10px 5px;
+  margin: 0px;
+  }
+  .pembayaranbank img {
+  width: 700%;
+  padding: 0px 0px 10px 0px;
+  }
+  .sebelahan{
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+  }
+  .logo-samping{
+  margin-top: -280px;
+  margin-left: 50px;
+  }
+  .user{
+  margin: 0;
+  padding: 0;
+  color: #343a40;;
+  font-weight: 600;
+  }
+  .btn-keluar{
+  font-weight: 650;
+  margin-left: 20px;
+  width: 100px;
+  height: 32px;
+  margin-top: 0px;
+  background:none;
+  border: 3px solid;
+  color: #343a40;;
+  border-color: #343a40;;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+
+  .btn-keluar:hover {
+  box-shadow: rgb(0, 255, 255);
+  border-radius: 3px;
+  border-color: #343a40;
+  background-color: #01a6ff;
+  color: #343a40;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.95);
+  }
+  .popup-olahraga{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  }
+  .popupcontent-olahraga{
+  width: 35%;
+  background-color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.25);
+  
+  opacity: 0;
+
+  transition: all 0.5s 0.1s;
+  }
+  #popup-olahraga:target{
+      opacity: 1;
+      visibility: visible;
+  }
+  #popup-olahraga:target .popupcontent-olahraga{
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+  }
+  .popupclose-olahraga:link,
+  .popupclose-olahraga:visited{
+      position: absolute;
+      top: 5%;
+      right: 3%;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      line-height: 1;
+      transition: all .3s;
+  }
+  .popupclose-olahraga:hover,
+  .popupclose-olahraga:active{
+      color: #01a6ff;
+  }
+  button.normall {
+      margin: 5px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 15px 30px;
+      color: #fff;
+      background-color: #343a40;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: 0.2s;
+  }
+
+  button:hover {
+      background-color: #01a6ff;
+      color: #fff;
+      transition: all 0.2s ease-in-out;
+      transform: scale(0.95);
+  }
+  .popupheader{
+  margin-left: 10px;
+  text-align: center;
+  color: #555;
+  margin-bottom: -5px;
+  }
+  section h3 {
+  font-size: 30px;
+  letter-spacing: 0.275em;
+  padding: 0px 0px 0px 7px;
+  }
+  @media screen and (max-width:991.98px) {
+      #navbar li a {
+          /*Ngilangin garis di masing-masing bawah header menu + atur ukuran sama warna font*/
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 600;
+          color: #ffffff;  /*Warna masing-masing menu*/
+          /*Transisi kalo warna kalo nunjukin cursor ke arah menu header*/
+          transition: 0.3s ease;
+      }
+      .user{
+          color: rgb(255, 255, 255);
+          margin-top: 0px;
+          margin-left: 0px;
+      }
+      .btn-masuk{
+          margin-left: 0;
+          width: 100px;
+          height: 32px;
+          margin-top: 0px;
+          background:none;
+          border: 2px solid;
+          color: rgb(255, 255, 255);
+          border-color: rgb(255, 255, 255);
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      .btn-daftar{
+          margin-left: 0;
+          width: 100px;
+          height: 32px;
+          margin-top: 0px;
+          border: 2px solid;
+          background:white;
+          color: rgb(0, 0, 0);
+          border-color: #fff;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      .btn-keluar{
+          width: 100px;
+          height: 32px;
+          margin-top: 0px;
+          background:none;
+          border: 2px solid;
+          color: rgb(255, 255, 255);
+          border-color: rgb(255, 255, 255);
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      .btn-keluar:hover{
+          width: 100px;
+          height: 32px;
+          margin-top: 0px;
+          background:none;
+          border: 2px solid;
+          color: rgb(255, 255, 255);
+          background-color: #01a6ff;
+          border-color: rgb(0, 0, 0);
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      .layar-dalam {
+          width: 90%;
+      }
+      .col{
+          display: flex;
+          max-width: 80%;
+      } 
+      nav .menu ul{
+          display: none;
+          margin-top: 60px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+      }
+      #navbar {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          position: fixed;
+      }
+      nav .menu ul li{
+          width: 100%;
+          border-bottom: 1px solid #ccc;
+          background-color: #dedede;
+          line-height: 40px;
+      }
+      nav .menu ul li a{
+          color: #333;
+      }
+      .tombol-menu{
+          display: flex;
+      }
+}

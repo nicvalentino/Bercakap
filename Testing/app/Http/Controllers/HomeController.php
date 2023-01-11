@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\post;
 use App\Models\artikel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -15,10 +16,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard', [
-            'isLoggedIn' => Auth::check(),
-            'user' => Auth::user()
-        ]);
+        if(Auth::check()){
+            return view('dashboard', [
+                'isLoggedIn' => Auth::check(),
+                'user' => Auth::user(),
+                'posts' => post::latest()->withCount('comments')->withCount('likeposts')->withCount('dislikeposts')->get(),
+            ]);
+        } else {
+            return redirect('/login');
+        }
     }
 
     /**
